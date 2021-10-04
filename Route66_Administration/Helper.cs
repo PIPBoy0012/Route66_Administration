@@ -14,6 +14,19 @@ namespace Route66_Administration
             return ConfigurationManager.ConnectionStrings[name].ConnectionString;
         }
 
+        public static bool IsAdmin(byte input)
+        {
+            if (input == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+             
+        }
+
         
     }
 }

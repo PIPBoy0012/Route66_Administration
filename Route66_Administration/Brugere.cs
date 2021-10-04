@@ -14,5 +14,30 @@ namespace Route66_Administration
         public int telefon { get; set; }
         public string password { get; set; }
         public bool admin { get; set; }
+
+        public Brugere()
+        {
+
+        }
+
+        public Brugere(int iD, string nAvn, bool aDmin)
+        {
+            id = iD;
+            navn = nAvn;
+            admin = aDmin;
+        }
+        public Brugere(int iD, string nAvn, string mAil,int tElefon, bool aDmin)
+        {
+            id = iD;
+            navn = nAvn;
+            mail = mAil;
+            telefon = tElefon;
+            admin = aDmin;
+        }
+        public string getInfo()
+        {
+            string line = ("ID: " + id.ToString() + ". Bruger: " + navn + ". Is Admin: " + admin);
+            return line;
+        }
     }
 }

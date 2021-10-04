@@ -65,6 +65,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Route66DBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Route66DBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Route66DBDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Spoergsmaal.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -97,6 +102,17 @@
     </None>
     <None Include="Route66DBDataSet.xss">
       <DependentUpon>Route66DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Route66DBDataSet1.xsc">
+      <DependentUpon>Route66DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Route66DBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Route66DBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Route66DBDataSet1.xss">
+      <DependentUpon>Route66DBDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
